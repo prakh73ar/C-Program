@@ -2,16 +2,25 @@
 #include <conio.h>
 int main()
 {
-    int marks[2][4] = {{45, 234, 2, 3},
-                       {3, 3, 3, 4}};
-
-    for (int i = 0; i < 2; i++)
+    int a;
+    printf("Enetr percentage");
+    scanf("%d", &a);
+    if (a > 80)
     {
-        for (int j = 0; j < 4; j++)
-        {
+        printf("A grade");
+    }
+    else if (a > 60)
+    {
+        printf("B grade");
+    }
+    else if (a > 40)
+    {
+        printf("C grade");
+    }
 
-            printf("The value of %d, %d  elements of the array is %d\n", i, j, marks[i][j]);
-        }
+    else
+    {
+        printf("fail");
     }
 
     return 0;

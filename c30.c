@@ -2,17 +2,22 @@
 #include <conio.h>
 int main()
 {
-    int marks[2][4] = {{45, 234, 2, 3},
-                       {3, 3, 3, 4}};
-
-    for (int i = 0; i < 2; i++)
+    int x, y;
+    printf("Enter the coordiantes : ");
+    scanf("%d", &x);
+    printf("Enter the coordiantes : ");
+    scanf("%d", &y);
+    if (x == 0 && y == 0)
     {
-        for (int j = 0; j < 4; j++)
-        {
-
-            printf("%d ", marks[i][j]);
-        }
-        printf("\n");
+        printf("The point is orgin");
+    }
+    else if (x == 0)
+    {
+        printf("Lies on y-axis");
+    }
+    else
+    {
+        printf("Lies on x-axis");
     }
 
     return 0;

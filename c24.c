@@ -1,31 +1,21 @@
-#include <stdio.h>
-int sum(int a, int b);
-void printstar(int n)
-{
-    for (int i = 0; i < n; i++)
-    {
-        printf("%c", '*');
-    }
-}
-int takenumber()
-{
-    int i;
-    printf("Enter a number");
-    scanf("%d", &i);
-    return i;
-}
+#include<stdio.h>
+#include<conio.h>
 int main()
 {
-    int a, b, c;
-    a = 9;
-    b = 9;
-    // c = sum(a, b);
-    c = takenumber();
-    // printstar(7);
-    printf("the number is %d: \n", c);
+    int x;
+    printf("Enetr the Number");
+    scanf("%d",&x);
+    
+
+    if (x%5==0||x%3==0)
+    {
+        printf("The number of divisible 5 or 3");
+
+    }
+    else
+    {
+        printf("This number is not divisble by 5 or 3");
+    }
+    
     return 0;
-}
-int sum(int a, int b)
-{
-    return a + b;
 }

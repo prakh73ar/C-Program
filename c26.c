@@ -1,23 +1,23 @@
 #include <stdio.h>
 #include <conio.h>
-int factorial(int number)
-
+int main()
 {
-    if (number == 1 || number == 0)
+    int a, b, c;
+    printf("Enetr first side ");
+    scanf("%d", &a);
+    printf("Enetr second side ");
+    scanf("%d", &b);
+    printf("Enter third side");
+    scanf("%d", &c);
+
+    if (a + b > c && b + c > a & c + a > b)
     {
-        return 1;
+        printf("Triangle valid");
     }
     else
     {
-        return (number * factorial(number - 1));
+        printf("Invalid triangle");
     }
-}
-int main()
-{
-    int x;
-    printf("Enter the number you want to factorial");
-    scanf("%d", &x);
-    printf("The factorial of %d is %d \n", x, factorial(x));
 
     return 0;
 }

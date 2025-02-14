@@ -2,16 +2,26 @@
 #include <conio.h>
 int main()
 {
-    int marks[4];
-    for (int i = 0; i < 4; i++)
-    {
-        printf("Enter the value of :\n", i);
-        scanf("%d", &marks[i]);
-    }
-    for (int i = 0; i < 4; i++)
-    {
-        printf("The value of %d elements of the array is %d\n", i, marks[i]);
-    }
+    int a;
+    printf("Enetr a number");
+    scanf("%d", &a);
 
+    if (a % 5 == 0)
+    {
+        if (a % 3 == 0)
+        {
+            printf("This number is divisble by 5 and 3");
+        }
+
+        else
+        {
+            printf("this number is not divisible by  3 but divisible by 5");
+        }
+    }
+    else
+    {
+      printf("thsi is not divisible by 5 and 3");
+    }
+    
     return 0;
 }
